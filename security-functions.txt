@@ -1,0 +1,42 @@
+//prevent click jacking
+function add_security_header_clickjacking() {
+	header( 'X-Frame-Options: SAMEORIGIN' );
+}
+add_action( 'send_headers', 'add_security_header_clickjacking' );
+
+//prevent mime sniffing
+function add_security_header_mimesniff() {
+    header( 'X-Content-Type-Options: nosniff' );
+}
+add_action( 'send_headers', 'add_security_header_mimesniff' );
+
+//x-xss-protection
+function add_security_header_xxssprotect() {
+    header( 'X-XSS-Protection: 1;mode=block' );
+}
+add_action( 'send_headers', 'add_security_header_xxssprotect' );
+
+//disable referrer header from https to http
+function add_security_header_referrerpolicy() {
+	header( 'Referrer-Policy: no-referrer-when-downgrade' );
+}
+add_action( 'send_headers', 'add_security_header_referrerpolicy' );
+
+//Content Security Policy (CSP)
+function add_security_header_contentpolicy() {
+    header( 'Content-Security-Policy: upgrade-insecure-requests;' );
+}
+add_action( 'send_headers', 'add_security_header_contentpolicy' );
+
+//HTTP Strict Transport Security (HSTS)
+function add_security_header_hsts() {
+	header( 'Strict-Transport-Security: "max-age=31536000" env=HTTPS' );
+}
+add_action( 'send_headers', 'add_security_header_hsts' );
+
+//disable theme & plugin editor
+//define( 'DISALLOW_FILE_EDIT', true );
+
+//hide wordpress version
+add_filter( 'the_generator', '__return_empty_string' );
+
