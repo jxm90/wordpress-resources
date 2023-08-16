@@ -40,6 +40,9 @@ add_action( 'send_headers', 'add_security_header_hsts' );
 //hide wordpress version
 add_filter( 'the_generator', '__return_empty_string' );
 
+//hide woocommerce version
+remove_action('wp_head', 'wc_generator_tag');
+
 //disable xmlrpc
 add_filter('xmlrpc_enabled', '__return_false');
 
