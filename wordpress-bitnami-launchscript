@@ -2,6 +2,7 @@ sudo wp plugin update --all
 sudo wp theme update --all
 sudo wp plugin install wp-mail-smtp --activate
 sudo wp plugin install limit-login-attempts --activate
+sudo wp plugin install disable-comments --activate
 sudo wp plugin install woocommerce --activate
 sudo wp plugin install classic-editor --activate
 sudo wp plugin install wp-dashboard-notes --activate
