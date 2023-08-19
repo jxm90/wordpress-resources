@@ -20,10 +20,6 @@ sudo wp core update
 
 
 
-/bitnami/wordpress/wp-content/themes/main-theme/functions.php
-
-
-
 
 
 
