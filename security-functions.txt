@@ -1,3 +1,4 @@
+
 //prevent click jacking
 function add_security_header_clickjacking() {
 	header( 'X-Frame-Options: SAMEORIGIN' );
@@ -55,8 +56,10 @@ function no_wordpress_errors(){
 }
 add_filter('login_errors', 'no_wordpress_errors');
 
-add_filter( 'generate_sections_sidebars','__return_true' );
-
-
-
-
+//left side on shop and product category page.
+add_filter( 'generate_sidebar_layout', function( $layout ) {
+    if ( is_shop() || is_product_category() ) {
+        return 'left-sidebar';
+    }
+    return $layout;
+} );
