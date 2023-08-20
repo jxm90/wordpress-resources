@@ -6,7 +6,7 @@ sudo wp plugin install limit-login-attempts --activate
 sudo wp plugin install disable-comments --activate
 sudo wp plugin install child-theme-wizard --activate
 sudo wp plugin install woocommerce --activate
-sudo wp plugin install woocommerce-ajax-filters --activate
+sudo wp plugin install iks-menu --activate
 sudo wp plugin install woo-stripe-payment --activate
 sudo wp plugin install classic-editor --activate
 sudo wp plugin install wp-dashboard-notes --activate
