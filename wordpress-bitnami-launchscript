@@ -6,17 +6,18 @@ sudo wp plugin install limit-login-attempts --activate
 sudo wp plugin install disable-comments --activate
 sudo wp plugin install child-theme-wizard --activate
 sudo wp plugin install woocommerce --activate
+sudo wp plugin install woo-stripe-payment --activate
 sudo wp plugin install classic-editor --activate
 sudo wp plugin install wp-dashboard-notes --activate
 sudo wp theme install generatepress
 sudo wp scaffold child-theme main-theme --parent_theme=generatepress
-#UNWORKING
-#wget https://raw.githubusercontent.com/jxm90/wordpress-resources/main/security-functions.txt
-#sudo chmod 666 /opt/bitnami/wordpress/wp-content/themes/main-theme/functions.php
-#sudo cat security-functions.txt >> /bitnami/wordpress/wp-content/themes/main-theme/functions.php
-#sudo chmod 644 /opt/bitnami/wordpress/wp-content/themes/main-theme/functions.php
+wget https://raw.githubusercontent.com/jxm90/wordpress-resources/main/security-functions.txt
+sudo chmod 666 /opt/bitnami/wordpress/wp-content/themes/main-theme/functions.php
+cat security-functions.txt >> /bitnami/wordpress/wp-content/themes/main-theme/functions.php
+sudo chmod 644 /opt/bitnami/wordpress/wp-content/themes/main-theme/functions.php
 sudo wp theme activate main-theme
 sudo wp core update
+
 
 
 
