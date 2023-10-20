@@ -12,3 +12,4 @@ Aditionally, the following plugins will be installed and activated.
 >wp-dashboard-notes
 
 The generate-press theme will we be installed and activated, a child theme will be created from that theme, and a patch will be applied to the themes functions.php file to increase security. 
+Also max_upload_size is increased to 1 GB
