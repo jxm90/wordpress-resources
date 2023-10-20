@@ -1,8 +1,11 @@
 Tested On Amazon Lightsail Bitnami Wordpress
 
-git clone https://github.com/jxm90/wordpress-resources.git
+Ideally you would copy and paste this script into the launch script area on amazon lightsail.
 
-cd wordpress-resources 
+Or
+>git clone https://github.com/jxm90/wordpress-resources.git
+>cd wordpress-resources
+>sh 
 
 This launch script for Bitnami Wordpress will update all wordpress software, plugins, and themes.
 Aditionally, the following plugins will be installed and activated.
