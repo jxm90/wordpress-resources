@@ -10,5 +10,5 @@ while true; do
     echo "Please try again"
 done
 cp toappend.txt edit.txt
-sed -i "s/username/$user/g" edit.sql
-sed -i "s/password/$password/g" edit.sql
+sed -i "s/your_email/$user/g" edit.sql
+sed -i "s/email_password/$password/g" edit.sql
