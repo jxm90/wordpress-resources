@@ -1,5 +1,5 @@
 wget https://raw.githubusercontent.com/jxm90/wordpress-resources/main/toappend.txt
-read -p "SMTP Server address" smtp
+read -p "Please enter the SMTP Server address" smtp
 echo "Please enter the E-mail address and password that will be sending mail."
 read -p "Username: " user
 while true; do
@@ -11,7 +11,7 @@ while true; do
     echo "Please try again"
 done
 cp toappend.txt edit.txt
-sed -i "s/your_email/$user/g" edit.txt
+sed -i "s/smtpserver/$smtp/g" edit.txt
 sed -i "s/your_email/$user/g" edit.txt
 sed -i "s/email_password/$password/g" edit.txt
 cat edit.txt >> /opt/bitnami/wordpress/wp-config.php
