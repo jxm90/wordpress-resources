@@ -1,5 +1,5 @@
-define( 'WPMS_ON', true ); // True turns on constants support and usage, false turns it off.
-define( 'WPMS_SMTP_HOST', 'smtp.emailarray.com' ); // The SMTP mail host.
+define( 'WPMS_ON', true );
+define( 'WPMS_SMTP_HOST', '' ); // Fill in
 define( 'WPMS_SMTP_PORT', 587 ); // The SMTP server port number.
 define( 'WPMS_SSL', 'tls' ); // Possible values '', 'ssl', 'tls' - note TLS is not STARTTLS.
 define( 'WPMS_SMTP_AUTH', true ); // True turns it on, false turns it off.
