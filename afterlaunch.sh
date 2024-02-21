@@ -13,3 +13,4 @@ cp toappend.txt edit.txt
 sed -i "s/your_email/$user/g" edit.txt
 sed -i "s/email_password/$password/g" edit.txt
 cat edit.txt >> /opt/bitnami/wordpress/wp-config.php
+rm edit.txt
