@@ -5,9 +5,11 @@ sudo wp plugin install wp-mail-smtp --activate
 sudo wp plugin install limit-login-attempts --activate
 sudo wp plugin install disable-comments --activate
 sudo wp plugin install child-theme-wizard --activate
+sudo wp plugin install child-theme-wizard --activate
 sudo wp plugin install woocommerce --activate
 sudo wp plugin install iks-menu --activate
 sudo wp plugin install woo-stripe-payment --activate
+sudo wp plugin install wp-menu-cart --activate
 sudo wp plugin install classic-editor --activate
 sudo wp plugin install wp-dashboard-notes --activate
 sudo wp theme install generatepress
