@@ -11,7 +11,7 @@ sudo wp plugin install child-theme-wizard --activate
 sudo wp plugin install woocommerce --activate
 sudo wp plugin install iks-menu --activate
 sudo wp plugin install woo-stripe-payment --activate
-sudo wp plugin install wp-menu-cart --activate
+sudo wp plugin install woocommerce-menu-bar-cart --activate
 sudo wp plugin install classic-editor --activate
 sudo wp plugin install wp-dashboard-notes --activate
 sudo wp plugin install user-role-editor --activate
