@@ -4,7 +4,7 @@ sudo wp plugin install maintenance --activate
 sudo wp plugin install wp-mail-smtp --activate
 sudo wp plugin install limit-login-attempts --activate
 sudo wp plugin install disable-comments --activate
-sudo wp plugin install child-theme-wizard --activate
+sudo wp plugin install envira-gallery-lite --activate
 sudo wp plugin install child-theme-wizard --activate
 sudo wp plugin install woocommerce --activate
 sudo wp plugin install iks-menu --activate
