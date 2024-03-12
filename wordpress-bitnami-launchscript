@@ -1,10 +1,7 @@
 sudo wp plugin update --all
 sudo wp theme update --all
-
-sudo wp plugin install additional-product-fields-for-woocommerce --activate
+sudo wp plugin install antispam-bee 
 sudo wp plugin install login-as-user --activate
-
-
 sudo wp plugin install maintenance --activate
 sudo wp plugin install login-recaptcha --activate
 sudo wp plugin install wpforms-lite --activate
@@ -14,6 +11,7 @@ sudo wp plugin install disable-comments --activate
 sudo wp plugin install envira-gallery-lite --activate
 sudo wp plugin install child-theme-wizard --activate
 sudo wp plugin install woocommerce --activate
+sudo wp plugin install additional-product-fields-for-woocommerce --activate
 sudo wp plugin install iks-menu --activate
 sudo wp plugin install woo-stripe-payment --activate
 sudo wp plugin install woocommerce-menu-bar-cart --activate
