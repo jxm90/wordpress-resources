@@ -1,5 +1,10 @@
 sudo wp plugin update --all
 sudo wp theme update --all
+
+
+sudo wp plugin install login-as-user --activate
+
+
 sudo wp plugin install maintenance --activate
 sudo wp plugin install login-recaptcha --activate
 sudo wp plugin install wpforms-lite --activate
