@@ -1,7 +1,7 @@
 sudo wp plugin update --all
 sudo wp theme update --all
 
-additional-product-fields-for-woocommerce
+sudo wp plugin install additional-product-fields-for-woocommerce --activate
 sudo wp plugin install login-as-user --activate
 
 
