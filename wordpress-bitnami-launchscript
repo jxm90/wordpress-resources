@@ -18,6 +18,7 @@ sudo wp plugin install woocommerce-menu-bar-cart --activate
 sudo wp plugin install classic-editor --activate
 sudo wp plugin install wp-dashboard-notes --activate
 sudo wp plugin install user-role-editor --activate
+sudo wp plugin install disable-theme-and-plugin-auto-update-email --activate
 sudo wp theme install generatepress
 sudo wp scaffold child-theme main-theme --parent_theme=generatepress
 wget https://raw.githubusercontent.com/jxm90/wordpress-resources/main/security-functions.txt
